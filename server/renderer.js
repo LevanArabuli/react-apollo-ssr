@@ -55,8 +55,10 @@ export default (req, res) => {
       res.status(200);
       res.send(
         htmlData
-          .replace('<div id="root"></div>', `<div id="root">${content}</div>`)
-          .replace('</body>', apolloState + '</body>')
+          .replace(
+            '<div id="root"></div>',
+            `<div id="root">${content}</div>${apolloState}`
+          )
           .replace('</body>', extraChunks.join('') + '</body>')
       );
       res.end();

@@ -5,7 +5,7 @@ import Pokemon from '../components/Pokemon';
 
 const GET_POKEMONS = gql`
   {
-    pokemons(first: 30) {
+    pokemons(first: 20) {
       id
       name
       classification
@@ -15,7 +15,7 @@ const GET_POKEMONS = gql`
 `;
 
 const Pokemons = () => (
-  <Query query={GET_POKEMONS} fetchPolicy="cache-first">
+  <Query query={GET_POKEMONS}>
     {({ loading, error, data }) => {
       if (loading) {
         return <div>loading...</div>;
