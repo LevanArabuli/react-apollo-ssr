@@ -15,7 +15,7 @@ const GET_POKEMONS = gql`
 `;
 
 const Pokemons = () => (
-  <Query query={GET_POKEMONS}>
+  <Query query={GET_POKEMONS} fetchPolicy="cache-first">
     {({ loading, error, data }) => {
       if (loading) {
         return <div>loading...</div>;
