@@ -5,7 +5,7 @@ import Pokemon from '../components/Pokemon';
 
 const GET_POKEMONS = gql`
   {
-    pokemons(first: 10) {
+    pokemons(first: 30) {
       id
       name
       classification
