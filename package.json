@@ -5,7 +5,7 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/register": "^7.7.4",
-    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-cache-inmemory": "^1.6.6",
     "apollo-client": "^2.6.4",
     "apollo-link": "^1.2.4",
     "apollo-link-error": "^1.1.12",
