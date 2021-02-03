@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
     "@babel/register": "^7.7.4",
     "apollo-cache-inmemory": "^1.6.3",
     "apollo-client": "^2.6.4",
